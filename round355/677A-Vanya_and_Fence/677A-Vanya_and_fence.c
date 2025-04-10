@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
     }
 
     // starting message
-    printf("Template C program is running.\n");
+    // printf("Template C program is running.\n");
 
     // example of memory allocation (if your program requires dynamic
     // memory allocation)
