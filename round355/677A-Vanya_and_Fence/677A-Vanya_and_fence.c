@@ -38,6 +38,13 @@ int main(int argc, char *argv[]) {
     // TODO: Add your program logic here.
     // For example, you might fill the buffer, process input, 
     // or execute other functions
+    int n, h;
+    int heights[1000];
+
+    scanf("%d %d", &n, &h);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &heights[i]);
+    
 
     // Clean up: Free allocated memory before exiting
     free(buffer);
