@@ -18,23 +18,6 @@
 */
 
 int main(int argc, char *argv[]) {
-    // example: check if a command-line argument is provided (optional)
-    if (argc < 1) {
-        printf("Usage: %s [arguments]\n", argv[0]);
-        return EXIT_FAILURE;
-    }
-
-    // starting message
-    // printf("Template C program is running.\n");
-
-    // example of memory allocation (if your program requires dynamic
-    // memory allocation)
-    char *buffer = (char *)malloc(MAX_BUFFER_SIZE);
-    if (buffer == NULL) {
-        fprintf(stderr, "Error: Failed to allocate memory.\n");
-        return EXIT_FAILURE;
-    }
-
     // TODO: Add your program logic here.
     // For example, you might fill the buffer, process input, 
     // or execute other functions
@@ -65,14 +48,14 @@ int main(int argc, char *argv[]) {
     // print total width needed to cover all the people
     printf("%d\n", width);
 
-    // Clean up: Free allocated memory before exiting
-    free(buffer);
-
     // to run it cd /path/to/your/code
     // clang 677A-Vanya_and_fence.c -o output
     // you have compiled the code
     // now run the output
     // ./output
+
+    // to read the input from a file
+    // clang 677A-Vanya_and_fence.c -o output < input.txt
     
     // Return success status
     return EXIT_SUCCESS;
