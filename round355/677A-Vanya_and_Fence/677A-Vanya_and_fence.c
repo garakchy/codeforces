@@ -41,14 +41,39 @@ int main(int argc, char *argv[]) {
     int n, h;
     int heights[1000];
 
+    // Read the number of people and the height of the fence
+    // read the height of each person
+    // and store it in the heights array
     scanf("%d %d", &n, &h);
     for (int i = 0; i < n; i++) {
         scanf("%d", &heights[i]);
+    }
     
+    // now check the height of each person
+    // if the height is greater than the fence height
+    // then add 2 to the width
+    // otherwise add 1 to the width
+    int width = 0;
+    for (int i = 0; i < n; i++) {
+        if (heights[i] > h) {
+            width = width + 2;
+        } else {
+            width = width + 1;
+        }
+    }
+    
+    // print total width needed to cover all the people
+    printf("%d\n", width);
 
     // Clean up: Free allocated memory before exiting
     free(buffer);
 
+    // to run it cd /path/to/your/code
+    // clang 677A-Vanya_and_fence.c -o output
+    // you have compiled the code
+    // now run the output
+    // ./output
+    
     // Return success status
     return EXIT_SUCCESS;
 }
